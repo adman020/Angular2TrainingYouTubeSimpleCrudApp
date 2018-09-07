@@ -5,6 +5,6 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: 'home.template.html'
 })
 
-export class HomeComponent {
+export class ProductComponent {
 
 }
