@@ -1,3 +1,24 @@
-<div class="container">
-    <h1>Welcome to the Home Component</h1>
-</div>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th class="text-center"ID></th>
+            <th class="text-center"Name></th>
+            <th class="text-center"Description></th>
+            <th class="text-center"Price></th>
+            <th class="text-center"&nbsp;></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.price}}</td>
+            <td>
+               <button class="btn btn-info"><i class="fa fa-edit"></i></button>     
+               <button class="btn btn-danger"><i class="fa fa-minus"></i></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
